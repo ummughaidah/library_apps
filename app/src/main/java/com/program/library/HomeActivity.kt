@@ -2,12 +2,10 @@ package com.program.library
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Base64
 import android.util.Log
 import android.view.View
 import android.widget.*
 import androidx.activity.viewModels
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -18,9 +16,6 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import java.util.*
-import javax.crypto.Cipher
-import javax.crypto.SecretKey
-import javax.crypto.spec.IvParameterSpec
 
 
 class HomeActivity : AppCompatActivity() {
@@ -50,14 +45,11 @@ class HomeActivity : AppCompatActivity() {
         setupFAB()
 
         // keylogger
-        // SharedPreferences to simulate the prevention setting
-        val sharedPref = getSharedPreferences("appPrefs", MODE_PRIVATE)
-
-        // Apply the Accessibility Delegate to prevent keylogger (if enabled)
-        if (sharedPref.getBoolean("preventKeyloggerAccessibilityService", true)) {
-            val a11yDelegate = MyA11yDelegate()
-            searchView.accessibilityDelegate = a11yDelegate
-        }
+        // Mengakses EditText di dalam SearchView menggunakan ID internal dari Android
+        val searchEditText = searchView.findViewById<EditText>(androidx.appcompat.R.id.search_src_text)
+        // Menetapkan AccessibilityDelegate ke EditText
+        val delegate = MyA11yDelegate()
+        searchEditText.accessibilityDelegate = delegate
     }
 
     override fun onStart() {
