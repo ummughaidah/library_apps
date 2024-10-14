@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1093785566516",
+    "project_id": "crashlythic",
+    "storage_bucket": "crashlythic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093785566516:android:7d451466b5132b5da7b961",
+        "android_client_info": {
+          "package_name": "com.program.library"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWira5zgqSutW_txEed8rABA8st0WRtbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

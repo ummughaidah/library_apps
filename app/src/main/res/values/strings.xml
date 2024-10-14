@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="submit">Submit</string>
+
+    <string name="judul">Judul</string>
+    <string name="penulis">Penulis</string>
+    <string name="penerbit">Penerbit</string>
+    <string name="tahun">Tahun Terbit</string>
+    <string name="harga">Harga</string>
+    <string name="stok">Stok</string>
+
+    <string name="penulis1">James Clear</string>
+    <string name="penerbit1">Gramedia</string>
+    <string name="titik_dua">:</string>
+    <string name="judul1">Atomic Habits</string>
+    <string name="tahun1">2018</string>
+    <string name="harga1">Rp 108.000</string>
+    <string name="stok1">50</string>
+
+    <!--recognition-->
+    <string name="here_the_recognized_text_will_be_displayed">HERE THE RECOGNIZED TEXT WILL BE DISPLAYED</string>
+    <string name="upload">Upload</string>
+    <string name="capture">Capture</string>
+    <string name="share">Share</string>
+    <string name="scanned_image">scanned image</string>
+</resources>
